@@ -1,0 +1,1 @@
+# ESPHome component for NeoTrellis
