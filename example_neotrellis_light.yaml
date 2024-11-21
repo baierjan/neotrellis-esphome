@@ -1,0 +1,8 @@
+light:
+  - platform: neotrellis
+    id: neotrellis_led_0
+    name: LED 0
+  - platform: neotrellis
+    id: neotrellis_led_7
+    name: Status LED
+    index: 7
