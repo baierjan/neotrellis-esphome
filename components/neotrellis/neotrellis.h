@@ -15,7 +15,7 @@ class NeoTrellisRGBLightOutput : public light::LightOutput {
   public:
     void set_index(const uint16_t index) {
       if (index >= 0 && index < trellis.pixels.numPixels()) {
-        this->index = index;
+        this->index_ = index;
       } else {
         esph_log_e(TAG, "LED index is out of bounds, only (0,%d> is allowed!", trellis.pixels.numPixels());
       }
@@ -32,12 +32,12 @@ class NeoTrellisRGBLightOutput : public light::LightOutput {
       float red, green, blue;
       state->current_values_as_rgb(&red, &green, &blue);
       uint32_t color = trellis.pixels.Color(255 * red, 255 * green, 255 * blue);
-      trellis.pixels.setPixelColor(this->index, color);
+      trellis.pixels.setPixelColor(this->index_, color);
       trellis.pixels.show();
     }
 
   protected:
-    uint16_t index = 0;
+    uint16_t index_ = 0;
 };
 
 } // namespace neotrellis
