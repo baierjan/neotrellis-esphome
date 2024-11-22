@@ -2,8 +2,8 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import light
 from esphome.const import CONF_ID, CONF_OUTPUT_ID, CONF_INDEX
+from . import neotrellis_ns
 
-neotrellis_ns = cg.esphome_ns.namespace("neotrellis")
 NeoTrellisRGBLightOutput = neotrellis_ns.class_(
     "NeoTrellisRGBLightOutput", light.LightOutput
 )

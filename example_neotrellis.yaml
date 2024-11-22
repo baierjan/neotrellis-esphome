@@ -1,0 +1,6 @@
+neotrellis:
+  - id: neotrellis_keyboard
+    on_press:
+      - lambda: ESP_LOGI("KEY", "key %d pressed", x);
+    on_release:
+      - lambda: ESP_LOGI("KEY", "key %d released", x);
