@@ -7,6 +7,8 @@ CODEOWNERS = ["@baierjan"]
 
 MULTI_CONF = 1
 
+CONFLICTS_WITH = ["i2c"]
+
 neotrellis_ns = cg.esphome_ns.namespace("neotrellis")
 
 NeoTrellis = neotrellis_ns.class_(

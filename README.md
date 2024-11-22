@@ -101,3 +101,4 @@ It turned out I need to inspire myself in the matrix keyboard component and make
 
 * Interrupt pin is not (yet?) supported.
 * There is no support for "MultiTrellis", but that should not be difficult to implement in the future.
+* Probably not compatible with other I2C devices as the used Adafruit library is handling the communication on its own. Could be probably solved by rewriting part of the library.
